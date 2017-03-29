@@ -30,23 +30,23 @@ public class SettingsFragment extends PreferenceFragment {
         addPreferencesFromResource(R.xml.preferences);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-//        mCheckboxAutosave = (CheckBoxPreference)getPreferenceManager().findPreference(getString(R.string.pref_autosave));
-//        mEditTextFilename = (EditTextPreference)getPreferenceManager().findPreference(getString(R.string.pref_savefile));
-
-        findPreference(getString(R.string.pref_autosave)).setOnPreferenceChangeListener(
-                new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-                Log.i("PREF", "Autosave changed");
-                return false;
-            }
-        });
-
-//        findPreference(getString(R.string.pref_savefile));
-
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//
+////        mCheckboxAutosave = (CheckBoxPreference)getPreferenceManager().findPreference(getString(R.string.pref_autosave));
+////        mEditTextFilename = (EditTextPreference)getPreferenceManager().findPreference(getString(R.string.pref_savefile));
+//
+//        findPreference(getString(R.string.pref_autosave)).setOnPreferenceChangeListener(
+//                new Preference.OnPreferenceChangeListener() {
+//            @Override
+//            public boolean onPreferenceChange(Preference preference, Object newValue) {
+//                Log.i("PREF", "Autosave changed");
+//                return false;
+//            }
+//        });
+//
+////        findPreference(getString(R.string.pref_savefile));
+//
+//        return super.onCreateView(inflater, container, savedInstanceState);
+//    }
 }
