@@ -2,238 +2,148 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_9e9a76ff782888dc1a13877e53f49d2390475369.jar" />
-    </item>
-    <item
         is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.2.0_195655ea3cbe808d761e8954661337754ac48cad/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_fee5a2443976978962cd1f71ce186328942d8d1f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_907f46ce3b832a043424d792817a727252539842.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_fee5a2443976978962cd1f71ce186328942d8d1f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_907f46ce3b832a043424d792817a727252539842/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.2.0_9e9a76ff782888dc1a13877e53f49d2390475369/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c8c70bc8e0832119345e38fb79492395262a2a6d">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_dca74e697e2b08c592558ce29848f02d3157e95e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.2.0_e21864f7f941e71fb7123967bacf050ec8c37532/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.2.0_e21864f7f941e71fb7123967bacf050ec8c37532.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_f9360d26257ec92395d880afdbe4658388b6e3c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/tom/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_decfb52d1de96e06750515d0419c4a3989e886c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_195655ea3cbe808d761e8954661337754ac48cad.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.2.0_e3351777ba55a2dab4465602bdbfd8fe7f50511c/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.2.0_e3351777ba55a2dab4465602bdbfd8fe7f50511c.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.2.0_2baf43a62d4ea9921b60bdf701f7b2e8d71d138c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/tom/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_decfb52d1de96e06750515d0419c4a3989e886c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.2.0_671fce212d0652817164b1b4a318fc6eeb496a5f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.2.0_b5005a2da9146b196072d59fc858441ace6cbb6e/classes.dex" />
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.2.0_2587811674b18975de2916bde7edf2401fa9df4e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.2.0_e000d17b1736102d397000399cd17fae52af4b2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.2.0_39ce159beb637187a9dc1776bb95077e32b5999a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.2.0_f1fb868bdd43d06baa9e86a65ae27f21a71ecaef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\design\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.2.0_c0dc54d90654f544735b7fc611944cd023874f0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_4617334601132fbf6595ca5c3d3c5783655658ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_e33130fbb45c855a743e192068e9c1fe649a3746\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.2.0_78bdb887eba26cec3779b3eb4af37f2a257ae257\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.2.0_f9360d26257ec92395d880afdbe4658388b6e3c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.2.0_b5005a2da9146b196072d59fc858441ace6cbb6e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.2.0_671fce212d0652817164b1b4a318fc6eeb496a5f.jar" />
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.2.0_edce7c3e0af39e8b2f79ccf097fd695002ee2326\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="60e259cb4137702a9f8e309a2f6c3da7264aa5ec">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_11ed4efc8a21e5a8726abc73096081de9504642b/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.2.0_2baf43a62d4ea9921b60bdf701f7b2e8d71d138c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_d2957d7ac290551e1df4d98e8fb4abba7c942979.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/run/media/tom/Deimos/projects/studia/AisleTorpedo/AisleTorpedo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_d2957d7ac290551e1df4d98e8fb4abba7c942979/classes.dex" />
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.2.0_16f9a18746fdbbd86e575e6a7d15c1498e648452\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.2.0_0879cb05dd7d878f594a515a46a03ab894bf7a2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aafbbbda2155a715190c5aa319b5ed8ca31b21ec">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d0d2c6291aa42a816c08ba0aa21f0146e451aa37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\revai\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_1475f4bfccd799d1d59e4a282da421642a509db9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a0e3b6535e779535df26424168328f9cdcdbc156">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d82d54586523d847f25d51c953db51cd4693c2c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\transition\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.2.0_ffda87c4bac5c77075fb58e8f9e934d56449064d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.2.0_6a650bfff0fe75c3406e88587840a06586fc5880\classes.dex" />
     </item>
 
 </items>
