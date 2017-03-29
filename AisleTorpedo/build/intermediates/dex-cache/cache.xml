@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.2.0_78bdb887eba26cec3779b3eb4af37f2a257ae257\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -30,57 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.takisoft.fix\preference-v7\25.1.1.0\jars\classes.jar"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="36240b3d17577ddd6f8acaf9f2bae370605c3b67">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.takisoft.fix-preference-v7-25.1.1.0_71db047ece2a233027d49dafc57115a5534daaa8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.2.0_f1fb868bdd43d06baa9e86a65ae27f21a71ecaef\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\design\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.2.0_c0dc54d90654f544735b7fc611944cd023874f0e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_4617334601132fbf6595ca5c3d3c5783655658ed\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_e33130fbb45c855a743e192068e9c1fe649a3746\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.2.0_78bdb887eba26cec3779b3eb4af37f2a257ae257\classes.dex" />
+        sha1="4afd8b0c08aa1a3485921c6cf3d110b35555882c">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-25.2.0_3b16ecb3dd1bdcbcec376e0603fd1c0811b0c39f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,6 +84,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.2.0_f1fb868bdd43d06baa9e86a65ae27f21a71ecaef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\revai\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
         jumboMode="true"
         optimize="true"
@@ -129,12 +102,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\preference-v14\25.1.1\jars\classes.jar"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\design\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="082eaf5a8bebe68f147526f16ae3a3e1b40e391e">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v14-25.1.1_a8342fea9481a46f6a73280d06fbf715fbafa752\classes.dex" />
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.2.0_c0dc54d90654f544735b7fc611944cd023874f0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\preference-v14\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="04de928d4c49cc4440f38b68f8e9364b34a0d8bc">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v14-25.2.0_796c0553472d6e3124a2e2a32a271dff5ef23da9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_4617334601132fbf6595ca5c3d3c5783655658ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.takisoft.fix\preference-v7\25.2.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="36240b3d17577ddd6f8acaf9f2bae370605c3b67">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.takisoft.fix-preference-v7-25.2.0.0_7f241bf81fb66a0f3de7b2417cb76240abe54531\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="b2bf557c7f151b16e9f357e08e43ae7f7a2d4881">
+        sha1="6c18f86ad5a48b71f83bc758185632d2cda34497">
         <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d82d54586523d847f25d51c953db51cd4693c2c4\classes.dex" />
     </item>
     <item
@@ -156,21 +156,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_e33130fbb45c855a743e192068e9c1fe649a3746\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
         <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.2.0_6a650bfff0fe75c3406e88587840a06586fc5880\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9078293943d0cf69b4111b7c141456b522a463c1">
-        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-25.1.1_392f848e91bf5429cff3b6fbff8aef7f9cd5e5a1\classes.dex" />
     </item>
 
 </items>

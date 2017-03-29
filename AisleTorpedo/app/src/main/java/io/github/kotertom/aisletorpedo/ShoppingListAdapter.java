@@ -41,7 +41,7 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
     }
 
 
-    public static class ShoppingItemHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class ShoppingItemHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener {
 
 
         protected EditText mEditTextItem;
@@ -72,6 +72,14 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
                 }
             });
 
+//            mEditTextItem.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//                @Override
+//                public void onFocusChange(View v, boolean hasFocus) {
+//                    if(!hasFocus)
+//                        v.setEnabled(false);
+//                }
+//            });
+
             mEditTextItem.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -81,6 +89,7 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
                 @Override
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
                     adapter.mShoppingItems.get(getAdapterPosition()).setText(s.toString());
+                    Log.d("DEBUG", PreferenceManager.getDefaultSharedPreferences(adapter.context).getString(adapter.context.getString(R.string.pref_savefile), "string N/A"));
                     try {
                         adapter.saveDataToFile(adapter.context.getString(R.string.save_file));
                     } catch (IOException e) {
@@ -101,12 +110,13 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
                 }
             });
 
-            v.setOnClickListener(this);
+            v.setOnLongClickListener(this);
         }
 
         @Override
-        public void onClick(View v) {
-            Log.d("RecyclerView", "CLICK!");
+        public boolean onLongClick(View v) {
+            Log.d("RecyclerView", "LONGCLICK!");
+            return false;
         }
     }
 
