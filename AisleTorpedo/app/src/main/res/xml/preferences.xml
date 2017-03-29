@@ -2,11 +2,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-        android:title="cat 1">
+        android:title="@string/pref_cat_backup">
 
         <CheckBoxPreference
-            android:title="cb 1"
+            android:title="@string/pref_autosave"
             android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:title="@string/pref_savefile"
+            android:defaultValue="@string/save_file"/>
 
     </PreferenceCategory>
 

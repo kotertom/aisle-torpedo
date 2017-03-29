@@ -2,6 +2,8 @@ package io.github.kotertom.aisletorpedo.activity;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
@@ -10,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import io.github.kotertom.aisletorpedo.R;
+import io.github.kotertom.aisletorpedo.activity.SettingsActivity;
 import io.github.kotertom.aisletorpedo.fragment.SettingsFragment;
 import io.github.kotertom.aisletorpedo.model.ShoppingItem;
 import io.github.kotertom.aisletorpedo.ShoppingListAdapter;
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ShoppingListAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private PreferenceFragment mPreferenceFragment;
+//    private PreferenceFragment mPreferenceFragment;
     private FloatingActionButton mFab;
 
     @Override
@@ -38,22 +42,37 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
+
+            @Override
+            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+                mAdapter.remove(viewHolder.getAdapterPosition());
+                Toast.makeText(getApplicationContext(),
+                        getString(R.string.item_removed),
+                        Toast.LENGTH_SHORT).show();
+            }
+        }).attachToRecyclerView(mRecyclerView);
 
         mFab = (FloatingActionButton)findViewById(R.id.fab_additem);
 
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        ShoppingItem i1 = new ShoppingItem();
-        i1.setText("kek");
-        i1.setChecked(true);
-        ShoppingItem i2 = new ShoppingItem();
-        i2.setText("lol");
-        i2.setChecked(false);
-        ArrayList<ShoppingItem> l = new ArrayList<ShoppingItem>();
-        l.add(i1);
-        l.add(i2);
-        mAdapter = new ShoppingListAdapter(l, this);
+//        ShoppingItem i1 = new ShoppingItem();
+//        i1.setText("kek");
+//        i1.setChecked(true);
+//        ShoppingItem i2 = new ShoppingItem();
+//        i2.setText("lol");
+//        i2.setChecked(false);
+//        ArrayList<ShoppingItem> l = new ArrayList<ShoppingItem>();
+//        l.add(i1);
+//        l.add(i2);
+        mAdapter = new ShoppingListAdapter(new ArrayList<ShoppingItem>(), this);
         mRecyclerView.setAdapter(mAdapter);
 
 //        AsyncTask.execute(new Runnable() {
@@ -66,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
         mAdapter.loadDataFromFile(getString(R.string.save_file));
 
-        mPreferenceFragment = new SettingsFragment();
+//        mPreferenceFragment = new SettingsFragment();
+
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
@@ -82,8 +102,10 @@ public class MainActivity extends AppCompatActivity {
         int i = item.getItemId();
         switch (i) {
             case R.id.action_settings: {
-                Toast.makeText(getApplicationContext(), "Lelo", Toast.LENGTH_LONG).show();
-                showHideFragment(mPreferenceFragment);
+//                Toast.makeText(getApplicationContext(), "Lelo", Toast.LENGTH_LONG).show();
+//                showHideFragment(mPreferenceFragment);
+                Intent in = new Intent(this, SettingsActivity.class);
+                startActivity(in);
                 break;
             }
             case R.id.action_remove_selected: {

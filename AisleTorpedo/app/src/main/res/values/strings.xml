@@ -8,10 +8,15 @@
     <string name="action_load_list">Load list</string>
 
     <string name="removed_items">Removed items: </string>
+    <string name="item_removed">Item removed</string>
     <string name="list_cleared">List cleared</string>
     <string name="save_file">data.ser</string>
     <string name="save_error">Could not save list</string>
     <string name="load_error">Could not load list</string>
     <string name="save_success">Saved!</string>
     <string name="load_success">Loaded!</string>
+
+    <string name="pref_cat_backup">Backup</string>
+    <string name="pref_autosave">Autosave changes</string>
+    <string name="pref_savefile">Save file</string>
 </resources>

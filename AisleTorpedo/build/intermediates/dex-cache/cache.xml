@@ -30,6 +30,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.takisoft.fix\preference-v7\25.1.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="36240b3d17577ddd6f8acaf9f2bae370605c3b67">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.takisoft.fix-preference-v7-25.1.1.0_71db047ece2a233027d49dafc57115a5534daaa8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -106,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="aafbbbda2155a715190c5aa319b5ed8ca31b21ec">
+        sha1="e0e24d8574e8fc5bec803bbb8f04c2e94736e9c3">
         <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d0d2c6291aa42a816c08ba0aa21f0146e451aa37\classes.dex" />
     </item>
     <item
@@ -120,11 +129,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\preference-v14\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="082eaf5a8bebe68f147526f16ae3a3e1b40e391e">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v14-25.1.1_a8342fea9481a46f6a73280d06fbf715fbafa752\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a0e3b6535e779535df26424168328f9cdcdbc156">
+        sha1="b2bf557c7f151b16e9f357e08e43ae7f7a2d4881">
         <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d82d54586523d847f25d51c953db51cd4693c2c4\classes.dex" />
     </item>
     <item
@@ -144,6 +162,15 @@
         revision="25.0.2"
         sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
         <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.2.0_6a650bfff0fe75c3406e88587840a06586fc5880\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9078293943d0cf69b4111b7c141456b522a463c1">
+        <dex dex="D:\projects\studia\aisle-torpedo\AisleTorpedo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-25.1.1_392f848e91bf5429cff3b6fbff8aef7f9cd5e5a1\classes.dex" />
     </item>
 
 </items>

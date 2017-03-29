@@ -1,6 +1,8 @@
 package io.github.kotertom.aisletorpedo;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -57,10 +59,15 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     adapter.mShoppingItems.get(getAdapterPosition()).setChecked(isChecked);
-                    try {
-                        adapter.saveDataToFile(adapter.context.getString(R.string.save_file));
-                    } catch (IOException e) {
-                        Log.e("Adapter/Save", "Exception: " + e.getMessage());
+                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(adapter.context);
+                    if(prefs.getBoolean(adapter.context.getString(R.string.pref_autosave), true)) {
+                        try {
+                            adapter.saveDataToFile(
+                                    prefs.getString(adapter.context.getString(R.string.pref_savefile),
+                                    adapter.context.getString(R.string.save_file)));
+                        } catch (IOException e) {
+                            Log.e("Adapter/Save", "Exception: " + e.getMessage());
+                        }
                     }
                 }
             });
@@ -150,6 +157,16 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
             Log.e("Adapter/Save", "Exception: " + e.getMessage());
         }
         return count;
+    }
+
+    public void remove(int position) {
+        mShoppingItems.remove(position);
+        notifyDataSetChanged();
+        try {
+            saveDataToFile(context.getString(R.string.save_file));
+        } catch (IOException e) {
+            Log.e("Adapter/Save", "Exception: " + e.getMessage());
+        }
     }
 
     public void clearList() {
