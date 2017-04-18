@@ -60,7 +60,7 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     adapter.mShoppingItems.get(getAdapterPosition()).setChecked(isChecked);
                     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(adapter.context);
-                    if(prefs.getBoolean(adapter.context.getString(R.string.pref_autosave), true)) {
+                    if(prefs.getBoolean(adapter.context.getString(R.string.key_pref_autosave), true)) {
                         try {
                             adapter.saveDataToFile(
                                     prefs.getString(adapter.context.getString(R.string.pref_savefile),
@@ -90,11 +90,12 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
                     adapter.mShoppingItems.get(getAdapterPosition()).setText(s.toString());
                     Log.d("DEBUG", PreferenceManager.getDefaultSharedPreferences(adapter.context).getString(adapter.context.getString(R.string.pref_savefile), "string N/A"));
-                    try {
-                        adapter.saveDataToFile(adapter.context.getString(R.string.save_file));
-                    } catch (IOException e) {
-                        Log.e("Adapter/Save", "Exception: " + e.getMessage());
-                    }
+                    adapter.tryAutosave(adapter.context);
+//                    try {
+//                        adapter.saveDataToFile(adapter.context.getString(R.string.save_file));
+//                    } catch (IOException e) {
+//                        Log.e("Adapter/Save", "Exception: " + e.getMessage());
+//                    }
                 }
 
                 @Override
@@ -141,11 +142,12 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
         item.setChecked(false);
         mShoppingItems.add(item);
         notifyDataSetChanged();
-        try {
-            saveDataToFile(context.getString(R.string.save_file));
-        } catch (IOException e) {
-            Log.e("Adapter/Save", "Exception: " + e.getMessage());
-        }
+        tryAutosave(context);
+//        try {
+//            saveDataToFile(context.getString(R.string.save_file));
+//        } catch (IOException e) {
+//            Log.e("Adapter/Save", "Exception: " + e.getMessage());
+//        }
     }
 
     public int removeSelectedItems() {
@@ -161,32 +163,35 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
         mShoppingItems.removeAll(toRemove);
         Log.d("Adapter", "Removing selected items");
         notifyDataSetChanged();
-        try {
-            saveDataToFile(context.getString(R.string.save_file));
-        } catch (IOException e) {
-            Log.e("Adapter/Save", "Exception: " + e.getMessage());
-        }
+        tryAutosave(context);
+//        try {
+//            saveDataToFile(context.getString(R.string.save_file));
+//        } catch (IOException e) {
+//            Log.e("Adapter/Save", "Exception: " + e.getMessage());
+//        }
         return count;
     }
 
     public void remove(int position) {
         mShoppingItems.remove(position);
         notifyDataSetChanged();
-        try {
-            saveDataToFile(context.getString(R.string.save_file));
-        } catch (IOException e) {
-            Log.e("Adapter/Save", "Exception: " + e.getMessage());
-        }
+        tryAutosave(context);
+//        try {
+//            saveDataToFile(context.getString(R.string.save_file));
+//        } catch (IOException e) {
+//            Log.e("Adapter/Save", "Exception: " + e.getMessage());
+//        }
     }
 
     public void clearList() {
         mShoppingItems.clear();
         notifyDataSetChanged();
-        try {
-            saveDataToFile(context.getString(R.string.save_file));
-        } catch (IOException e) {
-            Log.e("Adapter/Save", "Exception: " + e.getMessage());
-        }
+        tryAutosave(context);
+//        try {
+//            saveDataToFile(context.getString(R.string.save_file));
+//        } catch (IOException e) {
+//            Log.e("Adapter/Save", "Exception: " + e.getMessage());
+//        }
     }
 
     public void saveDataToFile(String filename) throws IOException {
@@ -227,6 +232,22 @@ public class ShoppingListAdapter extends RecyclerView.Adapter {
         }
         mShoppingItems = list;
         notifyDataSetChanged();
+    }
+
+    private boolean tryAutosave(Context context) {
+        boolean success = true;
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        if(prefs.getBoolean(context.getString(R.string.key_pref_autosave), true)) {
+            try {
+                saveDataToFile(
+                        prefs.getString(context.getString(R.string.pref_savefile),
+                                context.getString(R.string.save_file)));
+            } catch (IOException e) {
+                Log.e("Adapter/Save", "Exception: " + e.getMessage());
+                success = false;
+            }
+        }
+        return success;
     }
 
 

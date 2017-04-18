@@ -19,40 +19,43 @@ import io.github.kotertom.aisletorpedo.R;
  * Created by tom on 2017-03-07.
  */
 
-public class SettingsFragment extends PreferenceFragmentCompat {
-
-    protected CheckBoxPreference mCheckboxAutosave;
-    protected EditTextPreference mEditTextFilename;
+public class SettingsFragment extends PreferenceFragment
+                              implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.preferences);
+
+
     }
 
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-
-
+    public void onPause() {
+        super.onPause();
+        getPreferenceScreen()
+                .getSharedPreferences()
+                .unregisterOnSharedPreferenceChangeListener(this);
+//        PreferenceManager.getDefaultSharedPreferences(getActivity()).unregisterOnSharedPreferenceChangeListener(this);
     }
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//
-////        mCheckboxAutosave = (CheckBoxPreference)getPreferenceManager().findPreference(getString(R.string.pref_autosave));
-////        mEditTextFilename = (EditTextPreference)getPreferenceManager().findPreference(getString(R.string.pref_savefile));
-//
-//        findPreference(getString(R.string.pref_autosave)).setOnPreferenceChangeListener(
-//                new Preference.OnPreferenceChangeListener() {
-//            @Override
-//            public boolean onPreferenceChange(Preference preference, Object newValue) {
-//                Log.i("PREF", "Autosave changed");
-//                return false;
-//            }
-//        });
-//
-////        findPreference(getString(R.string.pref_savefile));
-//
-//        return super.onCreateView(inflater, container, savedInstanceState);
-//    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        getPreferenceScreen()
+                .getSharedPreferences()
+                .registerOnSharedPreferenceChangeListener(this);
+//        PreferenceManager.getDefaultSharedPreferences(getActivity()).registerOnSharedPreferenceChangeListener(this);
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if(key.equals(getString(R.string.key_pref_autosave))) {
+            Log.i("PREF", "autosave changed to " + sharedPreferences.getBoolean(key, false));
+        }
+        else if(key.equals(getString(R.string.key_pref_savefile))) {
+            Log.i("PREF", "save location changed to " + sharedPreferences.getString(key, "N/A"));
+        }
+        Log.i("PREF", "some preference changed");
+    }
 }

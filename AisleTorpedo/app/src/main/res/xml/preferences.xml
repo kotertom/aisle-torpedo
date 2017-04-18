@@ -6,10 +6,12 @@
 
         <CheckBoxPreference
             android:title="@string/pref_autosave"
+            android:key="@string/key_pref_autosave"
             android:defaultValue="true"/>
 
         <EditTextPreference
             android:title="@string/pref_savefile"
+            android:key="@string/key_pref_savefile"
             android:defaultValue="@string/save_file"/>
 
     </PreferenceCategory>

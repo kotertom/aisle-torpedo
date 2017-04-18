@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="preference-v7-25.2.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/7a77a35302696cd4ef0ed2f956c5248352ffd5a7/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/7a77a35302696cd4ef0ed2f956c5248352ffd5a7/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.fix/preference-v7/25.2.0.0/8989e9c480dd78fece3e69aeee28a252958d2bb8/preference-v7-25.2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

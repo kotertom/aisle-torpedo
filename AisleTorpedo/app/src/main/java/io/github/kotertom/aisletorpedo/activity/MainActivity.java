@@ -2,6 +2,7 @@ package io.github.kotertom.aisletorpedo.activity;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.app.Notification;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -24,155 +25,45 @@ import java.util.ArrayList;
 
 import io.github.kotertom.aisletorpedo.R;
 import io.github.kotertom.aisletorpedo.activity.SettingsActivity;
+import io.github.kotertom.aisletorpedo.fragment.MainFragment;
 import io.github.kotertom.aisletorpedo.fragment.SettingsFragment;
 import io.github.kotertom.aisletorpedo.model.ShoppingItem;
 import io.github.kotertom.aisletorpedo.ShoppingListAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView mRecyclerView;
-    private ShoppingListAdapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-//    private PreferenceFragment mPreferenceFragment;
-    private FloatingActionButton mFab;
+
+    private MainFragment mMainFragment;
+    private SettingsFragment mSettingsFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
-        mRecyclerView.setHasFixedSize(true);
-        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
+        mMainFragment = new MainFragment();
+        mSettingsFragment = new SettingsFragment();
 
-            @Override
-            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-                return false;
-            }
+        getFragmentManager()
+                .beginTransaction()
+                .add(R.id.activity_main, mMainFragment)
+                .commit();
 
-            @Override
-            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-                mAdapter.remove(viewHolder.getAdapterPosition());
-                Toast.makeText(getApplicationContext(),
-                        getString(R.string.item_removed),
-                        Toast.LENGTH_SHORT).show();
-            }
-        }).attachToRecyclerView(mRecyclerView);
-
-        mFab = (FloatingActionButton)findViewById(R.id.fab_additem);
-
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
-//        ShoppingItem i1 = new ShoppingItem();
-//        i1.setText("kek");
-//        i1.setChecked(true);
-//        ShoppingItem i2 = new ShoppingItem();
-//        i2.setText("lol");
-//        i2.setChecked(false);
-//        ArrayList<ShoppingItem> l = new ArrayList<ShoppingItem>();
-//        l.add(i1);
-//        l.add(i2);
-        mAdapter = new ShoppingListAdapter(new ArrayList<ShoppingItem>(), this);
-        mRecyclerView.setAdapter(mAdapter);
-
-//        AsyncTask.execute(new Runnable() {
-//            @Override
-//            public void run() {
-//                mAdapter.loadDataFromFile(getString(R.string.save_file));
-//                Toast.makeText(getApplicationContext(), "Data loaded", Toast.LENGTH_LONG).show();
-//            }
-//        });
-
-        mAdapter.loadDataFromFile(getString(R.string.save_file));
-
-//        mPreferenceFragment = new SettingsFragment();
-
+//        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+//        prefs.edit()
+//                .putBoolean(getString(R.string.pref_autosave), true)
+//                .putString(getString(R.string.pref_savefile), getString(R.string.save_file))
+//                .commit();
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_settings, menu);
-        return super.onCreateOptionsMenu(menu);
+
+    public void setCurrentFragment(Fragment frag) {
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.activity_main, frag)
+                .addToBackStack(null)
+                .commit();
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int i = item.getItemId();
-        switch (i) {
-            case R.id.action_settings: {
-//                Toast.makeText(getApplicationContext(), "Lelo", Toast.LENGTH_LONG).show();
-//                showHideFragment(mPreferenceFragment);
-                Intent in = new Intent(this, SettingsActivity.class);
-                startActivity(in);
-                break;
-            }
-            case R.id.action_remove_selected: {
-                int count = mAdapter.removeSelectedItems();
-                Toast.makeText(getApplicationContext(),
-                        getString(R.string.removed_items) + Integer.toString(count),
-                        Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.action_clear_list: {
-                mAdapter.clearList();
-                Toast.makeText(getApplicationContext(),
-                        getString(R.string.list_cleared),
-                        Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.action_save_list: {
-                try {
-                    mAdapter.saveDataToFile(getString(R.string.save_file));
-                    Toast.makeText(getApplicationContext(),
-                            getString(R.string.save_success),
-                            Toast.LENGTH_SHORT).show();
-                } catch (IOException e) {
-                    Toast.makeText(getApplicationContext(),
-                            getString(R.string.save_error),
-                            Toast.LENGTH_SHORT).show();
-                }
-                break;
-            }
-            case R.id.action_load_list: {
-                mAdapter.loadDataFromFile(getString(R.string.save_file));
-                Toast.makeText(getApplicationContext(),
-                        getString(R.string.load_success),
-                        Toast.LENGTH_SHORT).show();
-                break;
-            }
-            default:
-                break;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void addNewItem(View v) {
-        mAdapter.addNewItem();
-    }
-
-
-
-    public void showHideFragment(final Fragment fragment){
-
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.setCustomAnimations(android.R.animator.fade_in,
-                android.R.animator.fade_out);
-
-        if (fragment.isHidden()) {
-            ft.show(fragment);
-            Log.d("hidden","Show");
-        } else {
-            ft.hide(fragment);
-            Log.d("Shown","Hide");
-        }
-
-        ft.commit();
-    }
-
-
-
 
 }
