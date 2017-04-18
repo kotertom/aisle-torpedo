@@ -84,6 +84,17 @@ public class MainFragment extends Fragment {
             }
         });
 
+
+        // workaround for bug that's placing FAB in top-left corner (default position)
+        // occurring often when going back from settings fragment
+        // found at: http://stackoverflow.com/questions/39600012/bug-with-anchored-floatingactionbutton-in-support-library-24-2-1
+        mFab.post(new Runnable() {
+            @Override
+            public void run() {
+                mFab.requestLayout();
+            }
+        });
+
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 

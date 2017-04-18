@@ -48,12 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 .add(R.id.activity_main, mMainFragment)
                 .commit();
 
-//        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-//        prefs.edit()
-//                .putBoolean(getString(R.string.pref_autosave), true)
-//                .putString(getString(R.string.pref_savefile), getString(R.string.save_file))
-//                .commit();
-
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
 

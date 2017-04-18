@@ -13,24 +13,23 @@
         />
 
     <android.support.design.widget.CoordinatorLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/recycler_view"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_additem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
-            app:layout_anchor="@id/recycler_view"
-            app:layout_anchorGravity="right|bottom"
+            android:layout_margin="@dimen/activity_horizontal_margin"
             android:src="@drawable/ic_add_black_24dp"
-            android:id="@+id/fab_additem"/>
+            app:layout_anchor="@+id/recycler_view"
+            app:layout_anchorGravity="bottom|end"
+            />
 
     </android.support.design.widget.CoordinatorLayout>
 
